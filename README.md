@@ -56,7 +56,8 @@ WHOIS was used to examine publicly available information associated with the aut
 
 ### Evidence
 
-![WHOIS Analysis](screenshots/whois.png)
+![WHOIS Analysis](./whois.png)
+
 
 ---
 
@@ -73,8 +74,7 @@ WhatWeb was used to identify technologies and web-server information exposed by 
 
 ### Evidence
 
-![WhatWeb Analysis](screenshots/whatweb.png)
-
+![WhatWeb Analysis](./whatweb.png)
 ---
 
 ## 03 — Nslookup | DNS Investigation
@@ -89,7 +89,7 @@ Nslookup was used to examine domain resolution and obtain DNS-related informatio
 
 ### Evidence
 
-![Nslookup Analysis](screenshots/nslookup.png)
+![Nslookup Analysis](./nslookup.png)
 
 ---
 
@@ -106,7 +106,8 @@ cURL was used to inspect the HTTP response returned by the web server.
 
 ### Evidence
 
-![cURL Analysis](screenshots/curl.png)
+
+![cURL Analysis](./curl.png)
 
 ---
 
@@ -122,7 +123,8 @@ Wafw00f was used to check whether a detectable Web Application Firewall was pres
 
 ### Evidence
 
-![Wafw00f Analysis](screenshots/wafw00f.png)
+
+![Wafw00f Analysis](./wafw00f.png)
 
 ---
 
@@ -138,8 +140,7 @@ DNSRecon was used to perform additional DNS reconnaissance against the authorize
 
 ### Evidence
 
-![DNSRecon Analysis](screenshots/dnsrecon.png)
-
+![DNSRecon Analysis](./dnsrecon.png)
 ---
 
 ## 07 — Wappalyzer | Web Technology Analysis
@@ -155,8 +156,7 @@ Wappalyzer was used as a browser-based technology identification tool to analyze
 
 ### Evidence
 
-![Wappalyzer Analysis](screenshots/wappalyzer.png)
-
+![Wappalyzer Analysis](./wappalyzer.png)
 ---
 
 # 📊 Observation Summary
