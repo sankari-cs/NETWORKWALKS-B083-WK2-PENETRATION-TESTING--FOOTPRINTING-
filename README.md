@@ -262,7 +262,7 @@ Unauthorized scanning, enumeration, or testing may violate applicable laws, poli
 Cybersecurity Student | Python | Flask | OWASP | Web Application Security
 
 - GitHub: [sankari-cs](https://github.com/sankari-cs)
-- LinkedIn: [Sankari](https://www.linkedin.com/in/sankaria1)
+- LinkedIn: https://lnkd.in/p/gt-Fz8u2
 
 ---
 
