@@ -156,7 +156,7 @@ Wappalyzer was used as a browser-based technology identification tool to analyze
 
 ### Evidence
 
-![Wappalyzer Analysis](./wappalyzer.png)
+![Wappalyzer Analysis](./wapplzer.png)
 ---
 
 # 📊 Observation Summary
