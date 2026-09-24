@@ -1,5 +1,3 @@
-# NETWORKWALKS-B083-WK2-PENETRATION-TESTING--FOOTPRINTING-
-````markdown
 # 🔎 Networkwalks — Week 2
 ## Footprinting & Reconnaissance
 
@@ -7,264 +5,237 @@
 
 ---
 
-## 📖 About This Week
+## 📌 Overview
 
-As part of my **Networkwalks Cybersecurity Internship**, Week 2 focused on the initial information-gathering stage of a security assessment.
+As part of my **Networkwalks Cybersecurity Internship**, Week 2 focused on **Footprinting and Reconnaissance**.
 
-The practical work involved studying an authorized web target and collecting publicly observable information related to its **domain, DNS configuration, web technologies, HTTP behavior, and security controls**.
+The practical work involved gathering publicly observable information from an **authorized target** to understand its domain, DNS infrastructure, web technologies, HTTP behavior, and security controls.
 
-This exercise helped me understand how reconnaissance builds a technical picture of a target before deeper security testing.
-
----
-
-## 🎯 What I Practiced
-
-- Understanding the role of reconnaissance in penetration testing
-- Gathering publicly available information about an authorized target
-- Examining domain and DNS information
-- Identifying technologies used by a web application
-- Reviewing HTTP response information
-- Checking for the presence of web application security controls
-- Recording technical observations with supporting evidence
-- Following responsible and authorized security-testing practices
+This exercise helped me understand how reconnaissance contributes to building an initial technical picture of a target before deeper security testing.
 
 ---
 
-## 🧰 Reconnaissance Toolkit
+## 🎯 Objectives
+
+- Understand the role of reconnaissance in penetration testing
+- Gather publicly available information about an authorized target
+- Analyze domain and DNS information
+- Identify web technologies
+- Inspect HTTP responses and headers
+- Detect visible security controls
+- Document technical observations with evidence
+- Follow responsible and authorized testing practices
+
+---
+
+## 🛠️ Tools Used
 
 | Tool | Purpose |
 |---|---|
-| **WHOIS** | Examine publicly available domain registration information |
-| **WhatWeb** | Fingerprint technologies used by a website |
-| **Nslookup** | Query DNS information and resolve domain details |
-| **cURL** | Inspect HTTP responses and headers |
-| **Wafw00f** | Check for detectable Web Application Firewall technologies |
-| **DNSRecon** | Gather DNS-related information |
-| **Wappalyzer** | Identify web technologies through browser-based analysis |
+| **WHOIS** | Domain registration and public domain information |
+| **WhatWeb** | Web technology fingerprinting |
+| **Nslookup** | DNS and domain resolution |
+| **cURL** | HTTP response and header analysis |
+| **Wafw00f** | WAF detection |
+| **DNSRecon** | DNS enumeration |
+| **Wappalyzer** | Browser-based technology identification |
 
 ---
 
-## 🧭 Reconnaissance Workflow
+# 🔬 Practical Activities
 
-```text
-                 Authorized Target
-                        │
-                        ▼
-                Domain Information
-                        │
-                        ▼
-                  DNS Enumeration
-                        │
-                        ▼
-             Technology Identification
-                        │
-                        ▼
-               HTTP Header Review
-                        │
-                        ▼
-                 WAF Detection
-                        │
-                        ▼
-              Evidence & Observation
-````
+## 01 — WHOIS | Domain Information
 
-The purpose was to understand what information could be identified **without moving into exploitation**.
-
----
-
-# 🔬 Practical Work
-
-## 01 — Domain Intelligence
-
-The first stage involved examining publicly available information associated with the target domain.
-
-**Tool:** `WHOIS`
+WHOIS was used to examine publicly available information associated with the authorized domain.
 
 ### Focus
 
-* Domain registration information
-* Domain-related metadata
-* Publicly available registration details
+- Domain information
+- Registration details
+- Publicly available metadata
 
 ### Evidence
 
-Add your screenshot here:
-
-```text
-screenshots/
-└── whois.png
-```
+![WHOIS Analysis](screenshots/whois.png)
 
 ---
 
-## 02 — Web Technology Fingerprinting
+## 02 — WhatWeb | Technology Fingerprinting
 
-I used **WhatWeb** to identify technologies that could be detected from the target web application.
-
-**Tool:** `WhatWeb`
+WhatWeb was used to identify technologies and web-server information exposed by the target application.
 
 ### Focus
 
-* Web server information
-* Frameworks and technologies
-* Technology fingerprints exposed by the application
+- Web technologies
+- Frameworks
+- Server information
+- Technology fingerprints
 
 ### Evidence
 
-```text
-screenshots/
-└── whatweb.png
-```
+![WhatWeb Analysis](screenshots/whatweb.png)
 
 ---
 
-## 03 — DNS Investigation
+## 03 — Nslookup | DNS Investigation
 
-DNS information was examined to understand how the authorized domain resolves within the DNS infrastructure.
-
-**Tool:** `nslookup`
+Nslookup was used to examine domain resolution and obtain DNS-related information.
 
 ### Focus
 
-* Domain resolution
-* IP information
-* DNS responses
+- Domain resolution
+- IP information
+- DNS responses
 
 ### Evidence
 
-```text
-screenshots/
-└── nslookup.png
-```
+![Nslookup Analysis](screenshots/nslookup.png)
 
 ---
 
-## 04 — HTTP Response Analysis
+## 04 — cURL | HTTP Response Analysis
 
-I used **cURL** to inspect the HTTP response returned by the web server.
-
-**Tool:** `cURL`
+cURL was used to inspect the HTTP response returned by the web server.
 
 ### Focus
 
-* HTTP status information
-* Response headers
-* Server-side information exposed through HTTP
+- HTTP status
+- Response headers
+- Server information
+- HTTP behavior
 
 ### Evidence
 
-```text
-screenshots/
-└── curl.png
-```
+![cURL Analysis](screenshots/curl.png)
 
 ---
 
-## 05 — WAF Identification
+## 05 — Wafw00f | WAF Detection
 
-The target was checked using **Wafw00f** to determine whether a detectable Web Application Firewall was present.
-
-**Tool:** `Wafw00f`
-
-### Purpose
-
-Understanding defensive technologies visible during reconnaissance can provide useful context for later authorized security testing.
-
-### Evidence
-
-```text
-screenshots/
-└── wafw00f.png
-```
-
----
-
-## 06 — DNS Enumeration
-
-I performed additional DNS reconnaissance using **DNSRecon**.
-
-**Tool:** `DNSRecon`
+Wafw00f was used to check whether a detectable Web Application Firewall was present.
 
 ### Focus
 
-* DNS records
-* DNS infrastructure information
-* Additional publicly observable DNS details
+- WAF identification
+- Security-control detection
+- Defensive technology visibility
 
 ### Evidence
 
-```text
-screenshots/
-└── dnsrecon.png
-```
+![Wafw00f Analysis](screenshots/wafw00f.png)
 
 ---
 
-## 07 — Browser-Based Technology Analysis
+## 06 — DNSRecon | DNS Enumeration
 
-I also used the **Wappalyzer** browser extension to identify technologies detected from the web application through browser-based analysis.
+DNSRecon was used to perform additional DNS reconnaissance against the authorized target.
 
-### Why Use It?
+### Focus
 
-Using both command-line and browser-based tools provides different perspectives during reconnaissance and helps compare technology fingerprints.
+- DNS records
+- DNS infrastructure
+- Publicly observable DNS information
 
 ### Evidence
 
-```text
-screenshots/
-└── wappalyzer.png
-```
+![DNSRecon Analysis](screenshots/dnsrecon.png)
+
+---
+
+## 07 — Wappalyzer | Web Technology Analysis
+
+Wappalyzer was used as a browser-based technology identification tool to analyze the technologies detected by the web application.
+
+### Focus
+
+- Web technologies
+- Frameworks
+- Libraries
+- Browser-detected technology indicators
+
+### Evidence
+
+![Wappalyzer Analysis](screenshots/wappalyzer.png)
 
 ---
 
 # 📊 Observation Summary
 
-| Area       | Technique  | Security Context                   |
-| ---------- | ---------- | ---------------------------------- |
-| Domain     | WHOIS      | Public domain intelligence         |
-| Technology | WhatWeb    | Web technology fingerprinting      |
-| DNS        | Nslookup   | Domain and IP resolution           |
-| HTTP       | cURL       | Response/header analysis           |
-| Protection | Wafw00f    | WAF identification                 |
-| DNS        | DNSRecon   | DNS infrastructure enumeration     |
-| Web Stack  | Wappalyzer | Browser-based technology detection |
+| Area | Tool | Purpose |
+|---|---|---|
+| Domain | WHOIS | Domain intelligence |
+| Technology | WhatWeb | Technology fingerprinting |
+| DNS | Nslookup | Domain and IP resolution |
+| HTTP | cURL | Response and header analysis |
+| Protection | Wafw00f | WAF identification |
+| DNS | DNSRecon | DNS enumeration |
+| Web Stack | Wappalyzer | Technology identification |
 
-> **Important:** Reconnaissance observations should not automatically be treated as vulnerabilities. Additional authorized validation is required before classifying an observation as a security issue.
+> **Note:** Reconnaissance observations should not automatically be considered vulnerabilities. Further authorized validation is required before classifying an observation as a security issue.
+
+---
+
+# 🧭 Reconnaissance Workflow
+
+```text
+Authorized Target
+       │
+       ▼
+Domain Information
+       │
+       ▼
+DNS Investigation
+       │
+       ▼
+Technology Fingerprinting
+       │
+       ▼
+HTTP Response Analysis
+       │
+       ▼
+WAF Detection
+       │
+       ▼
+Evidence Collection
+       │
+       ▼
+Technical Documentation
+```
 
 ---
 
 # 🛡️ Security Perspective
 
-This exercise demonstrated that information exposed through normal public interfaces can contribute to an external view of an organization's technology environment.
+This exercise demonstrated how information exposed through publicly accessible services can provide an external view of an organization's technology environment.
 
 From a defensive perspective, organizations should regularly review:
 
-* Publicly exposed technology information
-* DNS records
-* HTTP response headers
-* Web server configuration
-* Security-control exposure
-* Unnecessary infrastructure information
-
-Reducing unnecessary information disclosure can make reconnaissance less informative to unauthorized parties.
+- Publicly exposed technology information
+- DNS records
+- HTTP response headers
+- Web-server configuration
+- Security-control exposure
+- Unnecessary information disclosure
 
 ---
 
-# 🧠 Key Takeaways
+# 🧠 Key Learnings
 
-Through this week's practical work, I gained hands-on experience with:
+Through this week's practical activities, I gained hands-on experience in:
 
-* The reconnaissance stage of penetration testing
-* Domain and DNS investigation
-* Web technology fingerprinting
-* HTTP response inspection
-* WAF detection
-* DNS enumeration
-* Browser-based technology discovery
-* Evidence collection and technical documentation
-* Responsible security assessment practices
+- Footprinting and reconnaissance
+- Domain intelligence
+- DNS investigation
+- Web technology fingerprinting
+- HTTP header analysis
+- WAF detection
+- DNS enumeration
+- Browser-based technology identification
+- Evidence collection
+- Technical documentation
+- Responsible security testing
 
-The main takeaway was understanding that **reconnaissance is the foundation for a structured security assessment** because it helps establish the technical scope and attack surface before further testing.
+The key takeaway was understanding how **reconnaissance helps establish the technical scope and attack surface before further authorized security testing**.
 
 ---
 
@@ -272,12 +243,12 @@ The main takeaway was understanding that **reconnaissance is the foundation for 
 
 All activities documented in this repository are intended for **educational and authorized cybersecurity testing**.
 
-Reconnaissance and security-testing techniques should only be performed against:
+Testing should only be performed against:
 
-* Systems you own
-* Lab environments
-* CTF platforms
-* Targets for which explicit authorization has been provided
+- Systems you own
+- Authorized lab environments
+- CTF platforms
+- Targets for which explicit permission has been provided
 
 Unauthorized scanning, enumeration, or testing may violate applicable laws, policies, or terms of service.
 
@@ -289,46 +260,15 @@ Unauthorized scanning, enumeration, or testing may violate applicable laws, poli
 
 Cybersecurity Student | Python | Flask | OWASP | Web Application Security
 
-🔗 GitHub: [sankari-cs](https://github.com/sankari-cs)
-
-🔗 LinkedIn: [Sankari](https://www.linkedin.com/in/sankaria1)
+- GitHub: [sankari-cs](https://github.com/sankari-cs)
+- LinkedIn: [Sankari](https://www.linkedin.com/in/sankaria1)
 
 ---
 
 ## 📌 Internship Learning Series
 
-**Program:** Networkwalks Cybersecurity Internship
-**Week:** 02
+**Program:** Networkwalks Cybersecurity Internship  
+**Week:** 02  
 **Focus:** Footprinting & Reconnaissance
 
 This repository documents my practical learning and hands-on cybersecurity activities during the internship.
-
-````
-
-### How to use it
-
-In your `sankari-A` repository:
-
-1. Open **Add file → Create new file**
-2. Name it:
-   ```text
-   README.md
-````
-
-3. Paste the entire code above.
-4. Click **Commit changes**.
-5. Later, create a folder:
-
-   ```text
-   screenshots
-   ```
-6. Upload your actual screenshots there.
-7. Change the screenshot filenames in the README if your files have different names.
-
-For example, once you upload `whois.png`, you can replace the placeholder with:
-
-```markdown
-![WHOIS Analysis](screenshots/whois.png)
-```
-
-That will make the screenshots **actually appear inside your GitHub README** rather than just showing the filename.
